@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FireBased_Model</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+.item{
+    text-align: center;
+    width: auto;
+}
+
+.bs-example{
+    margin: 10px;
+}
+
+.slider-size {
+height: 300px; /* This is your slider height */
+
+}
+.carousel {
+width:100%;
+margin:0 auto; /* center your carousel if other than 100% */ 
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">FireBase</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Cases</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">UseCases</a></li>
+        <div class="input-group-btn">
+          
+        </div>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+<!-- code for Carosel-->
+<div class="container">
+  <div class="row">
+  <div class="col-sm-12">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="http://appsknock.com/images/slide01.png" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="http://appsknock.com/images/slide01.png" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="http://appsknock.com/images/slide01.png" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+
+<html>
+<head>
+<style>
+div.apps {
+    background-color: black;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 0px;
+}
+</style>
+</head>
+<body>
+
+<div class="apps">
+<h2>Mail</h2>
+<img src="gnome_stock_mail_fwd.jpeg" alt="Mountain View" style="width:100px;height:100px;">
+<p>Just mail the queries you have</p>
+</div>
+
+<div class="apps">
+<h2>contact</h2>
+<img src="stock_contact_list.jpeg" alt="Mountain View" style="width:100px;height:100px;">
+<p>Feel free to contact for any queries</p>
+<p>Ph no:8745962154</p>
+</div>
+
+</body>
+</html>
+
+<html>
+<head>
+<style>
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+<h1>Test app</h1>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openFun(event, 'cloudStorage')">cloudStorage</button>
+  <button class="tablinks" onclick="openFun(event, 'cloudFunctions')">cloudFunctions</button>
+  <button class="tablinks" onclick="openFun(event, 'RealtimeDatabase')">RealtimeDatabase
+</button>
+</div>
+
+<div id="cloudStorage" class="tabcontent">
+  <h1>cloudStorage</h1>
+  <p>store and serve file at google</p>
+</div>
+
+<div id="cloudFunctions" class="tabcontent">
+  <h1>cloudFunctions</h1>
+  <p>run back without managing server</p>
+</div>
+
+<div id="RealtimeDatabase" class="tabcontent">
+   <h1>RealtimeDatabase</h1>
+  <p>Store and synchronize data in miliseconds</p>
+</div>
+
+<script>
+function openFun(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
+
+</div>
+
+</body>
+</html>
+<!-- Display Details -->
+
+<div class="container">
+  <h1>!!Do you Know</h1>
+  
+  <blockquote>
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    
+  </blockquote>
+<footer>Copyright &copy; FB_Model.com</footer>
+</div>
+</body>
+</html>
+
