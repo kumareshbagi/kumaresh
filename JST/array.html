@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <title>JavaScript Arrays</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HTML</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Java Script</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">SQL</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+<div class="container">
+<body>
+<h1>JavaScript Arrays</h1>
+ <fieldset>
+<p>JavaScript arrays are used to store multiple values in a single variable.</p><br>
+<p>An array is a special variable, which can hold more than one value at a time.</p><br>
+<p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+<p>var car1 = "Saab";<br>
+var car2 = "Volvo";<br>
+var car3 = "BMW";</p>
+<p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+<p>The solution is an array!</p>
+ </fieldset>
+</body>
+<body>
+	<fieldset>
+		<h1>Example</h1>
+		
+		&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;JavaScript Arrays &lt;/h1&gt;<br>
+&lt;p id="demo"&gt;&lt;/p&gt;<br>
+&lt;script&gt;<br>
+var cars = ["Saab", "Volvo", "BMW"];<br>
+document.getElementById("demo").innerHTML = cars;
+
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+		
+	<button type="button" >Try Me!</button>	
+		
+		</fieldset>
+	</body>
+	
+	<body>
+	<h1>Access the Elements of an Array	</h1>
+	<p>You refer to an array element by referring to the index number.</p>
+	<p>This statement accesses the value of the first element in cars:</p>
+	<p>var name = cars[0];</p>
+	<fieldset>
+		<h1>Example</h1>
+		
+		&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;JavaScript Arrays&lt;/h1&gt;<br>
+&lt;p&gt;JavaScript array elements are accesses using numeric indexes (starting from 0).&lt;/p&gt;<br>
+&lt;p id="demo"&gt;&lt;/p&gt;<br>
+&lt;script&gt;<br>
+var cars = ["Saab", "Volvo", "BMW"];<br>
+document.getElementById("demo").innerHTML = cars[0];
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+		
+	<button type="button" >Try Me!</button>	
+		
+		</fieldset>
+	</body>
+	
+	<body>
+	<h1>Looping Array Elements	</h1>
+	<p>The best way to loop through an array, is using a "for" loop:</p>
+		<fieldset>
+		<h1>Example</h1>
+		
+		&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;JavaScript Arrays&lt;/h1&gt;<br>
+&lt;p&gt;The best way to loop through an array is using a standard for loop:&lt;/p&gt;<br>
+&lt;p id="demo"&gt;&lt;/p&gt;<br>
+&lt;script&gt;<br>
+var fruits, text, fLen, i;<br>
+fruits = ["Banana", "Orange", "Apple", "Mango"];<br>
+fLen = fruits.length;<br>
+text = "<ul>";<br>
+for (i = 0; i < fLen; i++) {<br>
+    text += "<li>" + fruits[i] + "</li>";<br>
+}<br>
+text += "</ul>";<br>
+document.getElementById("demo").innerHTML = text;<br>
+&lt;/script&gt;<br>
+
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+		
+	<button type="button" >Try me!</button>
+		
+		</fieldset>
+	</body>
+
+</div>
+</body>
+</html> 

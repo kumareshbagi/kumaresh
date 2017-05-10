@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <title>JavaScript Objects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HTML</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Java Script</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">SQL</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+<div class="container">
+<body>
+<h1>JavaScript Objects</h1>
+ <fieldset>
+
+<p>In JavaScript, almost "everything" is an object.
+<br>
+1.Booleans can be objects (if defined with the new keyword)<br>
+2.Numbers can be objects (if defined with the new keyword)<br>
+3.Strings can be objects (if defined with the new keyword)<br>
+4.Dates are always objects<br>
+5.Maths are always objects<br>
+6.Regular expressions are always objects<br>
+7.Arrays are always objects<br>
+8.Functions are always objects<br>
+9.Objects are always objects<br>
+All JavaScript values, except primitives, are objects.</p><br>
+
+<h2>JavaScript Primitives</h2>
+<p>A primitive value is a value that has no properties or methods.<br>
+<br>
+A primitive data type is data that has a primitive value.<br>
+<br>
+JavaScript defines 5 types of primitive data types:<br>
+<br>
+1.string<br>
+2.number<br>
+3.boolean<br>
+4.null<br>
+4.undefined<br>
+Primitive values are immutable (they are hardcoded and therefore cannot be changed).</p>
+<h2>Using an Object Literal</h2>
+<p>This is the easiest way to create a JavaScript Object.<br>
+
+Using an object literal, you both define and create an object in one statement.<br>
+
+An object literal is a list of name:value pairs (like age:50) inside curly braces {}.<br>
+
+The following example creates a new JavaScript object with four properties:</p>
+ </fieldset>
+</body>
+<body>
+	<fieldset>
+		<h1>Example</h1>
+		
+		&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;Creating a JavaScript Object.&lt;p&gt;<br>
+&lt;p id="demo"&gt;&lt;p&gt;<br>
+&lt;script&gt;<br>
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};<br>
+
+document.getElementById("demo").innerHTML =<br>
+person.firstName + " is " + person.age + " years old.";
+
+&lt;/script&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+		
+	<button type="button" >Try Me!</button>	
+		
+		</fieldset>
+	</body>
+	
+	<h2>The this Keyword</h2>
+<p>In JavaScript, the thing called this, is the object that "owns" the JavaScript code.<br>
+
+The value of this, when used in a function, is the object that "owns" the function.<br>
+
+The value of this, when used in an object, is the object itself.<br>
+
+The this keyword in an object constructor does not have a value. It is only a substitute for the new object.<br>
+
+The value of this will become the new object when the constructor is used to create an object.</p>
+		
+		</fieldset>
+	</body>
+
+</div>
+</body>
+</html> 

@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+  <title>JavaScript Forms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">HTML</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Java Script</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">PHP</a></li>
+      <li><a href="#">SQL</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+<div class="container">
+<body>
+<h1>JavaScript Forms</h1>
+ <fieldset>
+<h2>JavaScript Form Validation</h2><br>
+<p>HTML form validation can be done by JavaScript.</p><br>
+<p>If a form field (fname) is empty, this function alerts a message, and returns false, to prevent the form from being submitted:</p><br>
+<h2>JavaScript Example</h2>
+<p>function validateForm() {<br>
+    var x = document.forms["myForm"]["fname"].value;<br>
+    if (x == "") {<br>
+        alert("Name must be filled out");<br>
+        return false;<br>
+    }<br>
+}</p>
+<p>The function can be called when the form is submitted.</p>
+ </fieldset>
+</body>
+<body>
+	<fieldset>
+		<h1>HTML Form Example</h1>
+		
+		&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;script&gt;<br>
+function validateForm() {<br>
+    var x = document.forms["myForm"]["fname"].value;<br>
+    if (x == "") {<br>
+        alert("Name must be filled out");<br>
+        return false;<br>
+    }<br>
+}<br>
+
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;form name="myForm" action="/action_page_post.php"<br>
+onsubmit="return validateForm()" method="post"&gt;<br>
+Name: &lt;input type="text" name="fname"&gt;<br>
+&lt;input type="submit" value="Submit"&gt;<br>
+&lt;/form&gt;
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+		
+	<button type="button" >Try Me!</button>	
+		
+		</fieldset>
+	</body>
+	
+	<body>
+	<h1>JavaScript Can Validate Numeric Input</h1>
+	<p>JavaScript is often used to validate numeric input:</p>
+	
+	<fieldset>
+		<h1>Example</h1>
+		<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Can Validate Input</h2>
+
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 
+		
+		</fieldset>
+	</body>
+
+</div>
+</body>
+</html> 
