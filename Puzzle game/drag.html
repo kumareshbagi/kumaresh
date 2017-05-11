@@ -1,6 +1,32 @@
 <!doctype html>
 <html>
 <head>
+	<html>
+<body>
+
+<p>Timer</p>
+
+<p id="demo"></p>
+
+<button onclick="myStopFunction()">Submit</button>
+
+<script>
+var myVar = setInterval(function(){ myTimer() }, 1000);
+
+function myTimer() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML = t;
+}
+
+function myStopFunction() {
+    clearInterval(myVar);
+}
+</script>
+
+</body>
+</html>
+	
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +35,7 @@
         <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
         <script src="jquery.drag-drop.plugin.js"></script>
         <script>
+			
             $(function() {              
                 $("#source3>div").dragdrop({
                     makeClone: true,
@@ -24,7 +51,22 @@
                     }
                 });
 
-            });
+          
+			$("#btnsbmt").click(function(){
+					divObj = document.getElementById("destination");
+					var result=divObj.textContent;
+				//alert(result);
+						if(result=="SUNDER")
+					{
+					alert("HELLO!,Answer is CORRECT");
+					
+					}
+					else{
+					alert("HELLO.WRONG!");
+					
+					}
+					});
+				  });
         </script>
     </head>
     <body>
@@ -81,8 +123,10 @@
 			<div id="destination" class="drop boxes">
             </div>
 			
+			<button type="button" class="btn btn-primary" id="btnsbmt" style="margin:auto;" >Submit</button>
+			
 			<h2>2.who is CEO of Microsoft</h2>
-			<div id="destination" class="drop boxes">
+			<div id="destination1" class="drop boxes">
             </div>
 			
 			<h2>3.who is PM of India</h2>
