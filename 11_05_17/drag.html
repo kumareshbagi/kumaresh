@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+	
+	<p>Timer:</p>
+
+<p id="demo"></p>
+
+<button onclick="myStopFunction()">Submit</button>
+
+<script>
+var myVar = setInterval(function(){ myTimer() }, 1000);
+
+function myTimer() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("demo").innerHTML = t;
+}
+
+function myStopFunction() {
+    clearInterval(myVar);
+}
+</script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Puzzle game</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+  #a, #b, #c, #d,#e,#f,#g,#h,#i,#j,#k,#l,#m,#n,#o,#p,#q,#r,#s,#t,#u,#v,#w,#x,#y,#z{ width: 60px; height: 60px; padding: 0.5em; float: left; margin: 0 10px 10px 0;background-color:"pink" }
+  #dvSource, #dvDest1,#dvDest2,#dvDest3,#dvDest4,#dvDest5,#dvDest6,#dvDest7,#dvDest8,#dvDest9,#dvDest10
+   {
+    border: 5px solid #ddd;
+    padding: 5px;
+    min-height: 50px;
+    width: 300px;
+    
+   }
+   
+   .u1
+   {
+   background-color: #111;
+  
+   top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    font:"blue";
+     height: 80px;
+   }
+  
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#a" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#b" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#c" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#d" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#e" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#f" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#g" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#g" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#h" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#i" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#j" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#k" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#l" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#m" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#n" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#o" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#p" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#q" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#r" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#s" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#t" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#u" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#v" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#w" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#x" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#y" ).draggable({ scroll: true }, {helper: "clone"});
+    $( "#z" ).draggable({ scroll: true },{helper: "clone"});
+  } );
+  
+$( function() 
+{               var y="";
+                var temp="";
+	  
+	   $( "#dvDest1" ).droppable
+	   ({
+                 
+
+	      drop: function( event, ui )
+	      {
+                 
+               temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+                
+                 
+                 
+                 
+                
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest2" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+                 
+               temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+                
+                 //alert("your answer is "+" "+y);
+                 
+                 
+                
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest3" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	       temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+	        
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest4" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+	        
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest5" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+	        
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest6" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+	        
+	      }
+	     
+	    });
+	   
+	   $( "#dvDest7" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+	        
+	      }
+	     
+	    });
+  $( "#dvDest8" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+	        
+	      }
+	     
+	    });
+  $( "#dvDest9" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+	        
+	      }
+	     
+	    });
+  $( "#dvDest10" ).droppable
+	   ({
+	      drop: function( event, ui )
+	      {
+	        temp=temp+ui.draggable.attr("id");
+	       $( this ).addClass( "ui-state-highlight" ).html(temp);
+	         
+	       
+	        var x5 = "Added Element is"+"  "+ui.draggable.attr("id");
+	        y=y+ui.draggable.attr("id");
+	        
+	      }
+	     
+	    });
+	  } );
+
+     function validate1()
+     {
+       var value=document.getElementById('dvDest1').innerHTML;
+     
+       if(value=='sunder')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  
+	   function validate2()
+     {
+       var value=document.getElementById('dvDest2').innerHTML;
+     
+       if(value=='satya')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  function validate3()
+     {
+       var value=document.getElementById('dvDest3').innerHTML;
+     
+       if(value=='narendra')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  function validate4()
+     {
+       var value=document.getElementById('dvDest4').innerHTML;
+     
+       if(value=='vishal')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  function validate5()
+     {
+       var value=document.getElementById('dvDest5').innerHTML;
+     
+       if(value=='tiger')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  function validate6()
+     {
+       var value=document.getElementById('dvDest6').innerHTML;
+     
+       if(value=='file')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  function validate7()
+     {
+       var value=document.getElementById('dvDest7').innerHTML;
+     
+       if(value=='dehali')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  function validate8()
+     {
+       var value=document.getElementById('dvDest8').innerHTML;
+     
+       if(value=='michael')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  function validate9()
+     {
+       var value=document.getElementById('dvDest9').innerHTML;
+     
+       if(value=='butschek')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+	  function validate10()
+     {
+       var value=document.getElementById('dvDest10').innerHTML;
+     
+       if(value=='banglore')
+       {  
+        location.reload();
+        alert("Your answer is correct go to next question");
+       }
+      else
+       alert("Your answer is wrong");
+        
+         
+     }
+
+
+  </script>
+</head>
+<body>
+<div class="u1">
+ <font color="white"><ul> <h1>Answer me?</h1></ul></font></div>
+ <br>
+ 
+
+<div id="a" class="ui-widget-content">
+  <h1><p>A</p></h1>
+</div>
+ 
+ <div id="b" class="ui-widget-content">
+  <h1><p>B</p></h1>
+</div>
+<div id="c" class="ui-widget-content">
+  <h1><p>C</p></h1>
+</div>
+<div id="d" class="ui-widget-content">
+  <h1><p>D</p></h1>
+</div>
+<div id="e" class="ui-widget-content">
+  <h1><p>E</p></h1>
+</div>
+<div id="f" class="ui-widget-content">
+  <h1><p>F</p></h1>
+</div>
+<div id="g" class="ui-widget-content">
+  <h1><p>G</p></h1>
+</div>
+<div id="h" class="ui-widget-content">
+  <h1><p>H</p></h1>
+</div>
+<div id="i" class="ui-widget-content">
+  <h1><p>I</p></h1>
+</div>
+<div id="j" class="ui-widget-content">
+  <h1><p>J</p></h1>
+</div>
+<div id="k" class="ui-widget-content">
+  <h1><p>K</p></h1>
+</div>
+<div id="l" class="ui-widget-content">
+  <h1><p>L</p></h1>
+</div>
+<div id="m" class="ui-widget-content">
+  <h1><p>M</p></h1>
+</div>
+<div id="n" class="ui-widget-content">
+  <h1><p>N</p></h1>
+</div>
+<div id="o" class="ui-widget-content">
+  <h1><p>O</p></h1>
+</div>
+<div id="p" class="ui-widget-content">
+  <h1><p>P</p></h1>
+</div>
+<div id="q" class="ui-widget-content">
+  <h1><p>q</p></h1>
+</div>
+<div id="r" class="ui-widget-content">
+  <h1><p>R</p></h1>
+</div>
+<div id="s" class="ui-widget-content">
+  <h1><p>S</p></h1>
+</div>
+
+ <div id="t" class="ui-widget-content">
+  <h1><p>T</p></h1>
+</div>
+ 
+ <div id="u" class="ui-widget-content">
+  <h1><p>U</p></h1>
+</div>
+ 
+ <div id="v" class="ui-widget-content">
+  <h1><p>V</p></h1>
+</div>
+
+<div id="w" class="ui-widget-content">
+  <h1><p>W</p></h1>
+</div>
+<div id="x" class="ui-widget-content">
+  <h1><p>X</p></h1>
+</div>
+
+<div id="y" class="ui-widget-content">
+  <h1><p>Y</p></h1>
+</div>
+
+<div id="z" class="ui-widget-content">
+  <h1><p>Z</p></h1>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br>
+<h3>1.who is CEO of google?</h3>
+<div id="dvDest1">
+    Drop here
+</div>
+<button onClick="validate1()">Validate </button>
+<br>
+
+<h3>2.who is CEO of Microsoft?</h3>
+<div id="dvDest2">
+    Drop here
+</div>
+<button onClick="validate2()">Validate </button>
+<br>
+
+<h3>3.who is PM of India?</h3>
+<div id="dvDest3">
+    Drop here
+</div>
+<button onClick="validate3()">Validate </button>
+<br>
+
+<h3>4.who is CEO of Infosys?</h3>
+<div id="dvDest4">
+    Drop here
+</div>
+<button onClick="validate4()">Validate </button>
+<br>
+
+<h3>5.which is our national animal?</h3>
+<div id="dvDest5">
+    Drop here
+</div>
+<button onClick="validate5()">Validate </button>
+<br>
+
+<h3>6.which type is used to upload a file in HTML?</h3>
+<div id="dvDest6">
+    Drop here
+</div>
+<button onClick="validate6()">Validate </button>
+<br>
+	<h3>7.which is the capital city of india?</h3>
+<div id="dvDest7">
+    Drop here
+</div>
+<button onClick="validate7()">Validate </button>
+	<h3>8.who is inventor of current?</h3>
+<div id="dvDest8">
+    Drop here
+</div>
+<button onClick="validate8()">Validate </button>
+	<h3>9.who is CEO of TATA Company?</h3>
+<div id="dvDest9">
+    Drop here
+</div>
+<button onClick="validate9()">Validate </button>
+	<h3>10.which is the capital city of karnataka?</h3>
+<div id="dvDest10">
+    Drop here
+</div>
+<button onClick="validate10()">Validate </button>
+</body>
+</html>
