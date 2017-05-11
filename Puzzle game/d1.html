@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>Wel Come
+	<br>
+	<br>
+	<br>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Droppable - Revert draggable position</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <style >
+	  
+	  
+  #draggable, #draggable2 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	#draggable3 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable4 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable5 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable6 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable7 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable8 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable9 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable10 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable11 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable12 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable13 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable14 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable15 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable16 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable17 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable18 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable19 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable20 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable21 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable22 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable23 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable24 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable25 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  #draggable26 { width: 25px; height: 25px; padding: 0.5em; float: left; margin: 2px 2px 2px 0; }
+	  
+ 
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable({ scroll: true });
+    $( "#draggable2" ).draggable({ scroll: true  });
+	  $( "#draggable3" ).draggable({ scroll: true  });
+	  $( "#draggable4" ).draggable({ scroll: true  });
+    $( "#draggable5" ).draggable({ scroll: true  });
+	  $( "#draggable6" ).draggable({ scroll: true  });
+	  $( "#draggable7" ).draggable({ scroll: true  });
+    $( "#draggable8" ).draggable({ scroll: true  });
+	  $( "#draggable9" ).draggable({ scroll: true  });
+	  $( "#draggable10" ).draggable({ scroll: true  });
+    $( "#draggable11" ).draggable({ scroll: true  });
+	  $( "#draggable12" ).draggable({ scroll: true  });
+	  $( "#draggable13" ).draggable({ scroll: true  });
+    $( "#draggable14" ).draggable({ scroll: true  });
+	  $( "#draggable15" ).draggable({ scroll: true  });
+	  $( "#draggable16" ).draggable({ scroll: true  });
+    $( "#draggable17" ).draggable({ scroll: true  });
+	  $( "#draggable18" ).draggable({ scroll: true  });
+	  $( "#draggable19" ).draggable({ scroll: true  }); 
+	  $( "#draggable20" ).draggable({ scroll: true  });
+    $( "#draggable21" ).draggable({ scroll: true  });
+	  $( "#draggable22" ).draggable({ scroll: true  });
+	  $( "#draggable23" ).draggable({ scroll: true  });
+    $( "#draggable24" ).draggable({ scroll: true  });
+	  $( "#draggable25" ).draggable({ scroll: true  });
+      $( "#draggable26" ).draggable({ scroll: true  });
+    
+   
+  
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="draggable" class="ui-widget-content">
+  <p>A</p>
+</div>
+ 
+<div id="draggable2" class="ui-widget-content">
+  <p>B</p>
+</div>
+	<div id="draggable3" class="ui-widget-content">
+  <p>C</p>
+</div>
+	
+	<div id="draggable4" class="ui-widget-content">
+  <p>D</p>
+</div>
+ 
+		<div id="draggable5" class="ui-widget-content">
+  <p>E</p>
+</div>
+	
+		<div id="draggable6" class="ui-widget-content">
+  <p>F</p>
+</div>
+	
+		<div id="draggable7" class="ui-widget-content">
+  <p>G</p>
+</div>
+	
+		<div id="draggable8" class="ui-widget-content">
+  <p>H</p>
+</div>
+	
+		<div id="draggable9" class="ui-widget-content">
+  <p>I</p>
+</div>
+	
+		<div id="draggable10" class="ui-widget-content">
+  <p>J</p>
+</div>
+	
+		<div id="draggable11" class="ui-widget-content">
+  <p>K</p>
+</div>
+	
+		<div id="draggable12" class="ui-widget-content">
+  <p>L</p>
+</div>
+	
+		<div id="draggable13" class="ui-widget-content">
+  <p>M</p>
+</div>
+	
+		<div id="draggable14" class="ui-widget-content">
+  <p>N</p>
+</div>
+	
+		<div id="draggable15" class="ui-widget-content">
+  <p>O</p>
+</div>
+	
+		<div id="draggable16" class="ui-widget-content">
+  <p>P</p>
+</div>
+	
+		<div id="draggable17" class="ui-widget-content">
+  <p>Q</p>
+</div>
+	
+		<div id="draggable18" class="ui-widget-content">
+  <p>R</p>
+</div>
+	
+		<div id="draggable19" class="ui-widget-content">
+  <p>S</p>
+</div>
+	
+		<div id="draggable20" class="ui-widget-content">
+  <p>T</p>
+</div>
+	
+		<div id="draggable21" class="ui-widget-content">
+  <p>U</p>
+</div>
+	
+		<div id="draggable22" class="ui-widget-content">
+  <p>V</p>
+</div>
+	
+		<div id="draggable23" class="ui-widget-content">
+  <p>W</p>
+</div>
+	
+		<div id="draggable24" class="ui-widget-content">
+  <p>X</p>
+</div>
+	
+		<div id="draggable25" class="ui-widget-content">
+  <p>Y</p>
+</div>
+	
+		<div id="draggable26" class="ui-widget-content">
+  <p>Z</p>
+</div>
+	<br>
+<br>
+	<br>
+	<br>
+ 
+</body>
+	<h1>who is founder of google</h1>
+	
+</html>

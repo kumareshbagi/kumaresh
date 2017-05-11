@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>puzzle game</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="jquery.drag-drop.plugin.js"></script>
+        <script>
+            $(function() {              
+                $("#source3>div").dragdrop({
+                    makeClone: true,
+                    sourceClass: "pendingDrop",
+                    dropClass: "highlight",
+                    container: $('.content'),
+                    didDrop: function($src, $dst) {
+                        if ($dst.attr("id")!="destination")
+                            $dst = $dst.parents("#destination");
+                        var currentText = $dst.text();
+                        currentText += $src.text();
+                        $dst.text(currentText);
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Wel come</h1>
+        </div>
+    
+        <div class="content">
+            <p></p>
+            <div  id="source3" class="source boxes">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+				<div>G</div>
+                <div>H</div>
+				<div>I</div>
+            </div>
+            <div id="source3" class="source boxes">
+                                
+                <div>J</div>
+                <div>K</div>
+                <div>L</div>
+				 <div>M</div>
+                <div>N</div>
+                <div>O</div>
+                <div>P</div>
+				<div>Q</div>
+                <div>R</div>
+            </div>
+            <div id="source3" class="source boxes">
+                <div>S</div>
+                <div>T</div>
+                <div>U</div>
+				 <div>V</div>
+                <div>W</div>
+                <div>X</div>
+                <div>Y</div>
+				<div>Z</div>
+                
+				
+            </div>
+			<br>
+			<br>
+            <div id="destination" class="drop boxes">
+            </div>
+			
+            <h2>1.who is CEO of google</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			
+			<h2>2.who is CEO of Microsoft</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			
+			<h2>3.who is PM of India</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			
+			<h2>4.who is CEO of Infosys</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			<h2>5.which is our national animal</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			<h2>6.which type is used to upload a file in HTML</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			<h2>7.who is the author of book "Himalayan Blender"</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			<h2>8.who is inventor of current</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			<h2>9.who is CEO of TATA Company</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			<h2>10.which is the capital city of karnataka</h2>
+			<div id="destination" class="drop boxes">
+            </div>
+			
+			
+        </div>
+    </body>
+</html>
+
